@@ -10,7 +10,7 @@ jobs:
           command: "npm install"
       - run:
           name: "run test"
-          command: "jest"
+          command: "npm test"
 workflows:
   version: 2
   runTest:
