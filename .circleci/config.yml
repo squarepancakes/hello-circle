@@ -2,8 +2,9 @@ version: 2
 jobs: 
   donkey: 
     docker: 
-      - image: buildpack-deps:trusty
+      - image: node:10.17.0-alpine
     steps:
+      - checkout
       - run: 
           name: "say hi to elephant"
           command: "echo hello elephant"
