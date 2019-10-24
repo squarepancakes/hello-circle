@@ -1,14 +1,14 @@
 version: 2
 jobs: 
-  test: 
+  donkey: 
     docker: 
       - image: buildpack-deps:trusty
     steps:
       - run: 
-    	    name: "say hi to circle"
-    	    command: "echo hello circle"
+          name: "say hi to elephant"
+          command: "echo hello elephant"
 workflows:
   version: 2
   runTest:
-      jobs:
-        - test
+    jobs:
+        - donkey
