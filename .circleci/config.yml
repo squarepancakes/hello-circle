@@ -6,8 +6,11 @@ jobs:
     steps:
       - checkout
       - run: 
-          name: "say hi to elephant"
-          command: "echo hello elephant"
+          name: "install package manager"
+          command: "npm install"
+      - run:
+          name: "run test"
+          command: "jest"
 workflows:
   version: 2
   runTest:
